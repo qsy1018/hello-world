@@ -1,0 +1,21 @@
+import random as ran
+money=int(input("请输入你的钱"))
+for i in range(200000):
+    z=ran.randint(0,172195729)
+    x=ran.randint(0,172195729)
+    y=ran.randint(0,10)
+    money -= 2*y
+    if(x==z):
+        money+=10000000*y
+    elif z-100<x<z+100:
+        money+=185428*y
+    elif z-1000<x<z+1000:
+        money+=3000*y
+    elif z-50000<x<z+50000:
+        money+=200*y
+    elif z-900000<x<z+900000:
+        money+=10*y
+    elif z-7000000<x<z+7000000:
+        money+=5*y
+    print(money)
+input("Press Any Key")
